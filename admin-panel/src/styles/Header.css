@@ -1,0 +1,198 @@
+/* Header styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ffffff;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgb(255, 255, 255);
+}
+
+/* Header Logo */
+.header-logo img {
+  height: 45px; /* Adjust for proper size */
+  width: auto;
+  cursor: pointer;
+}
+
+/* Search Bar */
+.header-search {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-search input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 0 1 300px;
+}
+
+.header-search button {
+  margin-left: 2px;
+  padding: 8px 8px;
+  background-color: #000000;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.header-search button img {
+  height: 40px;
+  width: 40px;
+}
+
+/* Icons Section */
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.header-icons img {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+/* Notification Bell */
+.notification-bell {
+  position: relative; /* To ensure the dropdown aligns with this element */
+  cursor: pointer;
+}
+
+.notification-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* Dropdown Animations */
+.dropdown {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  width: 170px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  z-index: 1000;
+  display: none;
+}
+
+.slide-down {
+  display: block;
+  animation: slideDown 0.3s ease-out forwards;
+}
+
+.slide-up {
+  display: none;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Dropdown Items */
+.dropdown-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item:hover {
+  background-color: #f7cbcb;
+}
+
+.dropdown div {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dropdown-empty {
+  padding: 10px;
+  text-align: center;
+  color: gray;
+}
+
+/* Profile Dropdown */
+.profile-dropdown {
+  position: absolute;
+  top: 35px;
+  right: -18px;
+  width: 170px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+}
+
+.profile-dropdown div {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.profile-dropdown div:last-child {
+  border-bottom: none;
+}
+
+.profile-dropdown div:hover {
+  background-color: #f7cbcb;
+}
+
+/* Loading Overlay */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Progress Container */
+.progress-container {
+  width: 150px;
+  height: 150px;
+}

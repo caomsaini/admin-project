@@ -1,0 +1,124 @@
+/* Dashboard Container */
+.dashboard-container {
+  font-family: Arial, sans-serif;
+  padding: 2px;
+  background-color: #faf8fa;
+}
+
+.order-container {
+  font-family: Arial, sans-serif;
+  padding: 0px;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+  max-width: max-content;
+}
+
+/* Title */
+.dashboard-title {
+  text-align: left;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #030000;
+}
+
+/* Section Titles */
+.section-title {
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+  color: #a4a4a4;
+  margin: 0px 0 10px;
+}
+
+/* Current Date Card */
+.current-date-card {
+  background-color: rgb(0, 0, 0);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 8px;
+  max-width: fit-content;
+}
+
+.customer-card {
+  background-color: rgb(0, 0, 0);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  max-width: fit-content;
+}
+
+.current-date-card h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #a4a4a4;
+  margin: 10px 0;
+}
+
+.customer-card h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #a4a4a4;
+  margin: 10px 0;
+}
+
+.today-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: max-content;
+}
+
+/* Grid Layout */
+.dashboard-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex: 1 1 calc(25% - 100px); /* 4 cards per row */
+  margin-top: 40px;
+}
+
+.dashboard-gridcard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex: 1 1 calc(25% - 100px); /* 4 cards per row */
+}
+
+/* Card */
+.dashboard-card {
+  flex: 1 1 calc(25% - 275px); /* 4 cards per row */
+  background-color: rgb(0, 0, 0);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #f0f2f4;
+  margin-bottom: 10px;
+}
+
+.card-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f80707;
+}

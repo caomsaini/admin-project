@@ -1,0 +1,174 @@
+/* Admin Panel Layout */
+.admin-panel {
+  display: flex;
+  height: 100vh;
+  background-color: #000000;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+.admin-panel.collapsed .sidebar {
+  width: 30px;
+}
+
+.admin-panel.collapsed .main-content {
+  margin-left: 1px;
+}
+
+.admin-panel .header-title {
+  transition: margin-left 0.3s ease-in-out;
+  margin-left: 20px; /* Default when sidebar is open */
+  text-align: left;
+  color: #ff0000;
+  margin-top: 40px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 130px;
+  background-color: #000000;
+  color: white;
+  padding: 80px 25px 25px;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #ffffff;
+  box-shadow: 2px 2px 4px rgb(255, 255, 255);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.sidebar .icon {
+  font-size: 18px;
+  font-weight: bold;
+  align-items: center;
+  color: #ff0000;
+}
+
+.toggle-btn {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 369px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bolder;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.toggle-btn img {
+  height: 30px; /* Adjust for proper size */
+  width: auto;
+  cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.main-content h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Status Cards */
+.status-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.status-card {
+  background: #f8d3d3;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.status-card h3 {
+  font-size: 18px;
+  color: #000;
+}
+
+.status-card p {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+/* Summary Cards */
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.summary-card {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.summary-card h3 {
+  font-size: 18px;
+  color: #2a7c55;
+}
+
+.summary-card p {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.status-card.clickable,
+.summary-card.clickable {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.status-card.clickable:hover,
+.summary-card.clickable:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Loading Overlay */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Progress Container */
+.progress-container {
+  width: 150px;
+  height: 150px;
+}

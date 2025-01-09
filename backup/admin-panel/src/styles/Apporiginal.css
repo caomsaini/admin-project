@@ -1,0 +1,15 @@
+/* App.css */
+
+.app-container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+
+
+.content {
+  margin-left: 250px; /* Leave space for the fixed sidebar */
+  padding: 20px;
+  flex: 1;
+  overflow-y: auto;
+  background-color: #f4f4f4;
+}

@@ -1,0 +1,21 @@
+.order-details {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .order-details th {
+    background-color: #4F46E5;
+    color: #FFFFFF;
+    padding: 16px;
+    text-align: left;
+  }
+  
+  .order-details td {
+    padding: 16px;
+    border-bottom: 1px solid #E5E7EB;
+  }
+  
+  .order-details tr:hover {
+    background-color: #F3F4F6;
+  }
+  

@@ -1,0 +1,77 @@
+/* Login Container */
+.login-container {
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background: #000000;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+  margin-top: 100px;
+  height: 450px;
+  color: #ddd;
+}
+
+/* Logo */
+.logo {
+  width: 200px;
+  margin-top: 25px;
+  margin-bottom: 80px;
+}
+
+/* Form Styles */
+.login-form input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+.login-form button {
+  width: 50%;
+  padding: 10px;
+  background-color: rgb(243, 134, 134);
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.login-form button:hover {
+  background-color: #ff2727;
+  color: #ddd;
+}
+
+.login-form button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+/* Loading Overlay */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Progress Container */
+.progress-container {
+  width: 150px; /* Adjust size of the progress circle */
+  height: 150px;
+}

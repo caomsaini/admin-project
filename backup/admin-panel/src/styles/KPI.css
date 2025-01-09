@@ -1,0 +1,18 @@
+.kpi-card {
+    background-color: #4F46E5;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .kpi-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .analytics-cards {
+    display: flex;
+    gap: 20px;
+  }
+  

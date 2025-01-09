@@ -1,0 +1,118 @@
+/* Header styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 250px; /* Adjust to align with sidebar */
+  right: 0;
+  height: 60px;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Logo */
+.header-logo h2 {
+  margin: 0;
+  color: #007bff;
+}
+
+/* Search bar */
+.header-search {
+  display: flex;
+  flex: 1;
+  margin: 0 300px;
+}
+
+.header-search input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.header-search button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.header-search button:hover {
+  background-color: #0056b3;
+}
+
+/* Icons (Notification & Profile) */
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+/* Dropdown Styles */
+.notifications-dropdown,
+.profile-dropdown {
+  position: absolute;
+  top: 70px; /* Ensure dropdown appears below the header */
+  right: 0;
+  width: 250px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1100;
+  overflow: hidden;
+}
+
+.notifications-dropdown .notification-item,
+.profile-dropdown div {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.notifications-dropdown .notification-item:hover,
+.profile-dropdown div:hover {
+  background-color: #f5f5f5;
+}
+
+.profile-dropdown {
+  right: 10px; /* Adjust profile dropdown alignment */
+}
+
+.notifications-dropdown {
+  right: 40px; /* Adjust notifications dropdown alignment */
+}
+
+/* Notification Bell & Badge */
+.notification-bell {
+  position: relative;
+  cursor: pointer;
+}
+
+.notification-bell .notification-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.profile-menu {
+  cursor: pointer;
+}

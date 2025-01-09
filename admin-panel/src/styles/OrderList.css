@@ -1,0 +1,46 @@
+.orders-table-container {
+    max-height: 600px;
+    overflow-y: auto;
+    position: relative;
+    padding: 15px;
+    margin-top: 10px;
+    background: #ff9090;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .orders-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .orders-table th {
+    text-align: left;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: #ff0000;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .orders-table th,
+  .orders-table td {
+    text-align: left;
+    padding: 12px 15px;
+    border-bottom: 0.5px solid #ff0000;
+  }
+  
+  .product-details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .product-image {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  

@@ -1,0 +1,39 @@
+.analytics-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.analytics-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.analytics-card .value {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.analytics-card .change {
+  font-size: 16px;
+}
+
+.analytics-card .positive {
+  color: green;
+}
+
+.analytics-card .negative {
+  color: red;
+}
+.kpi-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kpi-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
